@@ -23,7 +23,6 @@ bot.onText(/\/start/, (msg) => {
 
 state = 0
 bot.onText(/\/predict/, (msg) => { 
-    console.log(msg)
     bot.sendMessage(
         msg.chat.id,
         `input nilai x1|x2|x3 contohnya 27|21|81 (sesuai dengan nilai pada dataset)`
@@ -43,7 +42,6 @@ bot.on('message', (msg) => {
                 parseFloat(s[2])
             ]
         ).then((jres)=>{
-            console.log(jres);
             bot.sendMessage(
                 msg.chat.id,
                 `nilai y1 yang diprediksi adalah ${jres [0]} `
