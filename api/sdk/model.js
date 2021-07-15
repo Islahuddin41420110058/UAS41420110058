@@ -7,7 +7,7 @@ function normalized(data){ // x1, x2, x3
     return [x1, x2, x3]
 }
 
-function denormalized(data){
+function denormalized(data){ // y1, y2, y3
     y1 = (data[0] * 16.08197907) + 32.2718
     y2 = (data[1] * 8.918185118) + 39.959
     y3 = (data[2] * 11.79955613) + 69.739
