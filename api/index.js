@@ -26,7 +26,7 @@ bot.onText(/\/predict/, (msg) => {
     console.log(msg)
     bot.sendMessage(
         msg.chat.id,
-        `input nilai x1|x2|x3 contohnya 27|21|81`
+        `input nilai x1|x2|x3 contohnya 27|21|81 (sesuai dengan nilai pada dataset)`
     );   
     state = 1;
 });
